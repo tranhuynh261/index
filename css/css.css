@@ -1,0 +1,462 @@
+body{
+	padding: 0;
+	margin: 0;
+	
+	overflow: hidden;
+	font-family: 'Arima Madurai', cursive;
+	
+}
+@font-face{
+	font-family: cainaylafontnha;
+	src: url(../font/Desislava-PersonalUse.otf);
+}
+.wrapper{
+	width:100%;
+	height:100vh;
+	overflow-y: scroll;
+	scroll-behavior: smooth;
+
+}
+.logo img{
+	width: 150px;
+	background-size: cover;
+	position: absolute;
+	margin-left: 60px;
+	margin-top: 30px;
+	transition: all 0.2s;
+}
+.logo img:hover {
+	transform: scale(1.2);
+}
+.menu{
+	height: 100px;
+	width: 100vw;
+/*	background-color: #232323;*/
+	position: fixed;
+	z-index:4; 
+	padding-left: 40px;
+}
+.menu ul{
+	padding: 0px;
+	list-style: none;
+	margin-left: 500px;
+	margin-top: 40px;
+	font-family: 'Playfair Display', serif;
+
+}
+.menu ul li{
+	padding: 0px 70px;
+	float: left;
+	
+}
+.menu ul li a{
+	text-decoration: none;
+	color:#8b764a;
+	transition-duration: 0.5s;
+	font-size: 22px;
+}
+.menu ul li a:hover{
+	color: #BFB66B;
+	padding: 5px 4px;
+	border-bottom:solid #BFB66B thin;
+	transition-duration: 0.3s;
+	background: #FF000;
+}
+.noidung
+{
+	width: 100%;
+	height:100vh;
+	background-color: tomato;
+}
+.noidungleft 
+{
+	position: relative;
+}
+.noidungleft .vuongto 
+{
+	width: 550px;
+	height: 808px;
+	background: #8b764a;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+.noidungleft .vuongnho 
+{
+	width: 450px;
+	height: 300px;
+	background: #625334;
+	position: absolute;
+	top: 540px;
+	left: 140px;
+	z-index: 3; 
+}
+.noidungright 
+{
+	width: 226px;
+	height: 200px;
+/*	background: #BDDFFF;*/
+	position: relative;
+	z-index: 4;
+	top:250px;
+	left: 700px;
+	font-size: 15px;
+}
+.tong
+{
+	width: 606px;
+	height: 200px;
+	position: absolute;
+}
+.tong h1 
+{
+	font-family: cainaylafontnha;
+}
+#trangmot{
+	background:url(../img/Bg.png);
+	background-size: cover;
+	position: relative;
+}
+.hinhleft{
+	width: 100%;
+	position: absolute;
+	z-index: 4;
+}
+.hinhleft img
+{
+	top: 200px;
+	left: 320px;
+/*	z-index: 4;*/
+	background-size: cover;
+	position: absolute;
+}
+/*end.trangmot*/
+/*trang hai*/
+#tranghai{
+	height: 100vh;
+}
+.text{
+	position: relative;
+}
+.text01 
+{
+	top: 250px;
+	left: 370px;
+	position: absolute;
+	font-family: cainaylafontnha;
+}
+.text02
+{
+	width: 300px;
+	height: 200px;
+	top: 360px;
+	left: 310px;
+	position: absolute;
+	
+}
+.text02 h3 
+{
+	line-height: 23px;
+	font-family: 'Arima Madurai', cursive;
+}
+.square
+{
+	width: 1020px;
+	height:100vh;
+	background-color: #231E14;
+	left: 882px;
+	position: absolute;
+	padding-top: 300px;
+	padding-left: 200px;
+	box-sizing: border-box;
+}
+.skills{
+  width: 100%;
+  max-width: 600px;
+  padding: 0 20px;
+font-family: 'Playfair Display', serif;
+}
+
+.skill-name{
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 20px 0;
+color: antiquewhite;
+}
+
+.skill-bar{
+  height: 10px;
+  background: #cacaca;
+  border-radius: 8px;
+}
+
+.skill-per{
+  height: 10px;
+  background-color: #8b764a;
+  border-radius: 8px;
+  width: 0;
+  transition: 1s linear;
+  position: relative;
+}
+
+.skill-per::before{
+  content: attr(per);
+  position: absolute;
+  padding: 4px 6px;
+  background-color: #000;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 4px;
+  top: -35px;
+  right: 0;
+  transform: translateX(50%);
+}
+
+.skill-per::after{
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #000;
+  top: -16px;
+  right: 0;
+  transform: translateX(50%) rotate(45deg);
+  border-radius: 2px;
+}
+
+/*end.tranghai*/
+
+/*trang.ba*/
+
+#trangba
+{
+	height: 100vh;
+	position: relative;
+}
+.vuong3 
+{
+	width: 50vw;
+	height: 100vh;
+	background-color: #dad5c8;
+	position: relative;
+}
+.text05
+{
+	width: 300px;
+	height: 200px;
+	top: 320px;
+	left: 1220px;
+	position: absolute;
+	font-family: 'Arima Madurai', cursive;
+}
+.text05 p
+{
+	line-height: 23px;
+}
+.text3{
+	position: relative;
+}
+.text04 
+{
+	top: 200px;
+	left: 1220px;
+	position: absolute;
+	font-family: cainaylafontnha;
+}
+.contentleft 
+{
+	width: 50%;
+	height: 600px;
+	top: 200px;
+	left: 300px;
+	position: absolute;
+	z-index: inherit;
+	font-family: 'Playfair Display', serif;
+}
+.round 
+{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	position: absolute;
+	background: #4A3A12;
+	z-index: 3;
+	left: 1420px;
+	top: 600px;
+}
+.text05
+{
+	position: absolute;
+	z-index: 4;
+}
+/*trang 4*/
+.table 
+{
+	padding-top: 200px;
+}
+.form-style-7{
+	max-width:400px;
+	margin:50px auto;
+	background:#fff;
+	border-radius:2px;
+	padding:20px;
+	font-family: 'Playfair Display', serif;
+}
+.form-style-7 h1{
+	display: block;
+	text-align: center;
+	padding: 0;
+	margin: 0px 0px 20px 0px;
+	color: #5C5C5C;
+	font-size:x-large;
+}
+.form-style-7 ul{
+	list-style:none;
+	padding:0;
+	margin:0;	
+}
+.form-style-7 li{
+	display: block;
+	padding: 9px;
+	border:1px solid #DDDDDD;
+	margin-bottom: 30px;
+	border-radius: 3px;
+}
+.form-style-7 li:last-child{
+	border:none;
+	margin-bottom: 0px;
+	text-align: center;
+}
+.form-style-7 li > label{
+	display: block;
+	float: left;
+	margin-top: -19px;
+	background: #FFFFFF;
+	height: 14px;
+	padding: 2px 5px 2px 5px;
+	color: #B9B9B9;
+	font-size: 14px;
+	overflow: hidden;
+	font-family: 'Playfair Display', serif;
+}
+.form-style-7 input[type="text"],
+.form-style-7 input[type="date"],
+.form-style-7 input[type="datetime"],
+.form-style-7 input[type="email"],
+.form-style-7 input[type="number"],
+.form-style-7 input[type="search"],
+.form-style-7 input[type="time"],
+.form-style-7 input[type="url"],
+.form-style-7 input[type="password"],
+.form-style-7 textarea,
+.form-style-7 select 
+{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	display: block;
+	outline: none;
+	border: none;
+	height: 25px;
+	line-height: 25px;
+	font-size: 16px;
+	padding: 0;
+	font-family: 'Playfair Display', serif;
+}
+.form-style-7 input[type="text"]:focus,
+.form-style-7 input[type="date"]:focus,
+.form-style-7 input[type="datetime"]:focus,
+.form-style-7 input[type="email"]:focus,
+.form-style-7 input[type="number"]:focus,
+.form-style-7 input[type="search"]:focus,
+.form-style-7 input[type="time"]:focus,
+.form-style-7 input[type="url"]:focus,
+.form-style-7 input[type="password"]:focus,
+.form-style-7 textarea:focus,
+.form-style-7 select:focus 
+{
+}
+.form-style-7 li > span{
+	background: #F3F3F3;
+	display: block;
+	padding: 3px;
+	margin: 0 -9px -9px -9px;
+	text-align: center;
+	color: #C0C0C0;
+	font-family: 'Playfair Display', serif;
+	font-size: 11px;
+}
+.form-style-7 textarea{
+	resize:none;
+}
+.form-style-7 input[type="submit"],
+.form-style-7 input[type="button"]
+	#button{
+    border: 2px solid #4A3A12;
+    background-color: white;
+    color: #4A3A12;
+    padding: 15px 40px;
+    font-size: 15px;	
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	margin-top: 40px;
+	border-radius: 10px;
+}
+#button:hover{
+	background-color: black;
+	color:white;
+}
+
+.form-style-7 input[type="submit"]:hover,
+.form-style-7 input[type="button"]:hover{
+	background: #4A3A12;
+	color:#fff;
+}
+.text06 
+{
+	top: 100px;
+	left: 850px;
+	position: absolute;
+	font-family: cainaylafontnha;
+	text-align: center;
+	color: aliceblue;
+}
+#trangbon
+{
+	position: relative;
+	background: url(../img/img4.jpg);
+	background-size: cover;
+	
+}
+.social{
+	height: 120px;
+/*	background: #2a3039;*/
+	position: absolute;
+	left: 40%;
+}
+.social ul{
+	text-align: center;
+	margin-top: 38px;
+}
+.social ul li{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+/*	background: #ebebeb;*/
+	border: 3px solid aliceblue;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 40px;
+	font-size: 22px;
+	margin-right: 30px;
+}
+.social ul li i{
+	color: aliceblue;
+}
+
+
+
+
